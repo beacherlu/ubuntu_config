@@ -24,7 +24,7 @@ set background=dark
 
 set nocompatible
 
-set nowrap
+set wrap
 syntax on
 "colorscheme molokai
 set number
