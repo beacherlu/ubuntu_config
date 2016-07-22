@@ -85,8 +85,10 @@ fi
 
 # some more ls aliases
 alias ll='ls -alF'
+alias py='python'
 alias la='ls -A'
 alias l='ls -CF'
+alias lock='cmatrix'
 
 #custom
 alias buildc='gcc main.c -o main'
@@ -113,17 +115,19 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 #set java envrionment
-export JAVA_HOME=~/Java_tools/jdk1.6.0_45
-export JRE_HOME=$JAVA_HOME/jre
-#export TOMCAT_HOME=/home/ak/bin/apache-tomcat-8.0.23
+#export JAVA_HOME=/home/beacher/bin/jdk
+#export JRE_HOME=$JAVA_HOME/jre
+#export TOMCAT_HOME=~/bin/tomcat
 #export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH:$TOMCAT_HOME/lib/servlet-api.jar
 
 #export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH:$TOMCAT_HOME/lib/servlet-api.jar
+#export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
 
 
 #set maven environment
-#export M2_HOME=~/Java_tools/apache-maven-3.2.5
+#export M2_HOME=~/bin/maven
 #export PATH=$M2_HOME/bin:$PATH
+export PATH=/home/beacher/bin/phabricator/arcanist/bin:$PATH
 
 
 #export PS1="\u:\w:) \[$(tput sgr0)\]"
